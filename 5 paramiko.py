@@ -1,7 +1,7 @@
 import paramiko
 import os
 import time
-import ...
+
 
 command = input("Enter command : ")
 
