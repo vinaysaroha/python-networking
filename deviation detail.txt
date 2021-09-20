@@ -1,27 +1,12 @@
-Last login: Sat Sep  4 21:43:50 2021 from 192.168.0.196
-fdisk -l
-[root@vm2 ~]# fdisk -l
-
-Disk /dev/sda: 10.9 GB, 10877698048 bytes, 21245504 sectors
-Units = sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 512 bytes
-I/O size (minimum/optimal): 512 bytes / 512 bytes
-Disk label type: dos
-Disk identifier: 0x000c3c01
-
-   Device Boot      Start         End      Blocks   Id  System
-/dev/sda1   *        2048     2099199     1048576   83  Linux
-/dev/sda2         2099200    21243903     9572352   8e  Linux LVM
-
-Disk /dev/mapper/centos-root: 8707 MB, 8707375104 bytes, 17006592 sectors
-Units = sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 512 bytes
-I/O size (minimum/optimal): 512 bytes / 512 bytes
-
-
-Disk /dev/mapper/centos-swap: 1090 MB, 1090519040 bytes, 2129920 sectors
-Units = sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 512 bytes
-I/O size (minimum/optimal): 512 bytes / 512 bytes
-
-[root@vm2 ~]# 
+192.168.0.101
+
+vm2
+
+
+
+192.168.0.101
+
+vm2
+
+
+

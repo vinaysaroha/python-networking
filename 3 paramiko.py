@@ -6,8 +6,8 @@ import os
 
 ssh_client = paramiko.SSHClient()
 ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-user_name = input("Enter username: ")
-password = input("Enter password: ")
+# user_name = input("Enter username: ")
+# password = input("Enter password: ")
 command = input("Enter the command: ")
 # man_page = input("Do you need to read man page y/n: ")
 try:
@@ -18,14 +18,15 @@ try:
             ip = server_ip.strip()
             server_list.append(ip)
     for server_ip in server_list:
-        ssh_client.connect(hostname=server_ip, username=user_name, password=password, port=22, allow_agent=False,
+        ssh_client.connect(hostname=server_ip, username="root", password="redhat", port=22, allow_agent=False,
                            look_for_keys=False)
         print(f"Connected to {server_ip}")
         shell = ssh_client.invoke_shell()
         # if man_page.lower() == 'y':
         #     shell.send('terminal length 0\n')
+        time.sleep(0.25)
         shell.send(command + '\n')
-        time.sleep(1)
+        time.sleep(0.5)
         output = shell.recv(1000000).decode()
         # output = output.decode('utf-8')
         with open(file="deviation detail.txt", mode='w') as file:
